@@ -6,4 +6,4 @@
 
 ## Верстка  
 
-[Fashion - интернет-магазин](https://github.com/a3hack/a3hack.github.io/tree/master/fashion/index.html)
+[Fashion - интернет-магазин](https://a3hack.github.io/fashion/index.html)
