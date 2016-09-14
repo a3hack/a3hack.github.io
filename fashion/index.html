@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+  <!-- <meta name="viewport" content="width=1.0"> -->
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link href="bxSlider/jquery.bxslider.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Fashion</title>
+</head>
+<body>
+	<header>
+		<ul class="nav">
+			<li class="nav_item"><a href="#" class="logo">Fashion</a></li>
+			<li class="nav_item"><a href="#">каталог</a></li>
+			<li class="nav_item"><a href="#">доставка и оплата</a></li>
+			<li class="nav_item"><a href="#">контакты и филиалы</a></li>
+			<li class="nav_item"><a href="#">отзывы</a></li>
+			<li class="nav_item"><a href="#" class="bucket">моя корзина</a></li>
+		</ul>
+	</header>
+
+	<article class="commercial">
+	 <div class="commercial_wrapper">
+  	<section class="slider">
+			<ul class="bxslider">
+	  		<li><img src="images/slide1.png" /></li>
+	  		<li><img src="images/slide2.png" /></li>
+	  		<li><img src="images/slide3.png" /></li>
+	  		<li><img src="images/slide4.png" /></li>
+			</ul>
+		<div id="slider_pages_wrap">
+			<a data-slide-index="0" href="" class="slider_page"></a>
+			<a data-slide-index="1" href="" class="slider_page"></a>
+			<a data-slide-index="2" href="" class="slider_page"></a>
+			<a data-slide-index="3" href="" class="slider_page"></a>
+			<a data-slide-index="4" href="" class="slider_page"></a>
+		</div>
+  	</section>
+  	<section class="commercial_content">
+  		<h1>новогодняя<br>распродажа</h1>
+			<div class="commercial_content_banner">
+				<span class="sale_banner_span">скидки до -87%</span>
+			</div>
+			<div class="commercial_exist_span">
+			  <span>Предложение действует:</span>	
+			</div>
+			<div class="commercial_date_wrap">
+				<div class="commercial_date">
+					<span class="commercial_date_number">12</span>
+					<span class="commercial_date_string">дня</span>
+				</div>
+				<div class="commercial_date">
+					<span class="commercial_date_number">12</span>
+					<span class="commercial_date_string">часов</span>
+				</div>
+				<div class="commercial_date">
+					<span class="commercial_date_number">12</span>
+					<span class="commercial_date_string">минут</span>
+				</div>
+			</div>	
+		</section>
+    <section class="commercial_wigets">
+			<div class="commercial_wigets_item">
+				<img src="images/24.png" alt="" class="commercial_wigets_item_img" />
+				<span class="commercial_wigets_item_span">Работаем круглосуточнно</span>
+			</div>
+			<div class="commercial_wigets_item">
+				<img src="images/2000.png" alt="" class="commercial_wigets_item_img" />
+				<span class="commercial_wigets_item_span">Довольных клиентов за 4+<br>года работы</span>
+			</div>
+			<div class="commercial_wigets_item">
+				<img src="images/certificate.png" alt="" class="commercial_wigets_item_img" />
+				<span class="commercial_wigets_item_span">Все сумки изготовленны из<br>натуральной итальянской кожи</span>
+			</div>
+			<div class="commercial_wigets_item">
+				<img src="images/present.png" alt="" class="commercial_wigets_item_img" />
+				<span class="commercial_wigets_item_span">Кошелек из натуральной<br>кожи в подарок</span>
+			</div>
+    </section>
+   
+	</article>
+	
+	<main class="main_content">
+	
+	<aside class="menu_wrap">
+
+		<form action="post">
+    	<input type="text" id="search" class="search" name="search">
+		</form>
+		<h2 class="header_brand">бренд</h2>
+		<form action="post" class="select_wrap">
+			<select name="brand" id="brand" class="brand">
+				<option value="">Prada</option>
+				<option value="">Gucci</option>
+				<option value="">Armani</option>
+			</select>
+			<label for="brand" class="label_brand"></label>
+		</form >
+    <h2 class="header_wooman">женское</h2>
+  	<ul class="menu">
+  		<li class="menu_item"><a href="#" class="menu_link">Cумки</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Кошельки</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Клатчи</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Косметички</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Палантины</a></li>
+  	</ul>
+
+    <h2 class="header_man">мужское</h2>
+  	<ul class="menu">
+  		<li class="menu_item"><a href="#" class="menu_link">Дипломаты</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Портфели</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Кошельки</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Портфели</a></li>
+  		<li class="menu_item"><a href="#" class="menu_link">Барсетки</a></li>
+  	</ul>
+	</aside>
+
+	<article class="figure_wrap">
+
+  	<figure class="figure"><img src="images/1.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/2.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/3.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/4.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/5.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/6.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/7.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/8.png" class="figure_img" alt=""></figure>
+  	<figure class="figure"><img src="images/9.png" class="figure_img" alt=""></figure>
+
+	</article>
+	</main>
+	<footer></footer>
+<script src="jquery-2.2.1.js"></script>
+<script src="bxSlider/jquery.bxslider.js"></script>
+<script src="scrollreveal.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

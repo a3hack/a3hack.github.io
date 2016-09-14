@@ -1,0 +1,34 @@
+@font-face {
+	font-family: Kelson Regular;
+	src: url("fonts/Kelson Sans/Kelson Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Kelson Light;
+	src: url("fonts/Kelson Sans/Kelson Light.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Raleway-Regular;
+	src: url("fonts/Raleway/Raleway-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Raleway-Bold;
+	src: url("fonts/Raleway/Raleway-Bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Myriad Regular;
+	src: url("fonts/MyriadPro/MyriadPro-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
