@@ -1,2 +1,9 @@
 # a3hack.github.io
-a3hack portfolio
+## My Portfolio and current projects  
+
+В этом репозитории вы найдете примеры верстки и моих динайнерских работ,  
+а также проэкты на JS и PHP.  
+
+## Верстка  
+
+[Fashion - интернет-магазин]()
