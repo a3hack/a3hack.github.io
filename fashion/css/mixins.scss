@@ -1,0 +1,20 @@
+@mixin space_between($amount, $wrap_width, $elem_width, $demension){
+	display: inline-block;
+	vertical-align: middle;
+	// width: $elem_width+$demension;
+	// height: $elem_height+$demension;
+	margin-left: (($wrap_width - ($amount * $elem_width)) / ($amount - 1)) / $wrap_width * 100%;
+		&:first-child{
+			margin-left: 0px;
+		}
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
