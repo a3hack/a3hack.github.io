@@ -3,138 +3,574 @@
 <head>
 	<meta charset="UTF-8">	
   <!-- <meta name="viewport" content="width=1.0"> -->
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="fonts.css">
-	<link href="bxSlider/jquery.bxslider.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/a3normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link href="js/bxSlider/jquery.bxslider.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Fashion</title>
 </head>
 <body>
-	<header>
-		<ul class="nav">
-			<li class="nav_item"><a href="#" class="logo">Fashion</a></li>
-			<li class="nav_item"><a href="#">каталог</a></li>
-			<li class="nav_item"><a href="#">доставка и оплата</a></li>
-			<li class="nav_item"><a href="#">контакты и филиалы</a></li>
-			<li class="nav_item"><a href="#">отзывы</a></li>
-			<li class="nav_item"><a href="#" class="bucket">моя корзина</a></li>
-		</ul>
-	</header>
+  <div class="main-wrap">
+	  <header class="top-header">
 
-	<div class="commercial">
-	 <div class="commercial_wrapper">
-     <div class="slider">
-			<ul class="bxslider">
-	  		<li><img src="images/slide1.png" alt="Сумка 1" /></li>
-	  		<li><img src="images/slide2.png" alt="Клатч 1" /></li>
-	  		<li><img src="images/slide3.png" alt="Сумка 2" /></li>
-	  		<li><img src="images/slide4.png" alt="Клатч2" /></li>
-			</ul>
-		 <div id="slider_pages_wrap">
-			<a data-slide-index="0" href="" class="slider_page"></a>
-			<a data-slide-index="1" href="" class="slider_page"></a>
-			<a data-slide-index="2" href="" class="slider_page"></a>
-			<a data-slide-index="3" href="" class="slider_page"></a>
-			<a data-slide-index="4" href="" class="slider_page"></a>
-		 </div>
-  	 </div>
-  	 <div class="commercial_content">
-  		<h1>новогодняя<br>распродажа</h1>
-			<div class="commercial_content_banner">
-				<span class="sale_banner_span">скидки до -87%</span>
-			</div>
-			<div class="commercial_exist_span">
-			  <span>Предложение действует:</span>	
-			</div>
-			<div class="commercial_date_wrap">
-				<div class="commercial_date">
-					<span class="commercial_date_number">12</span>
-					<span class="commercial_date_string">дня</span>
-				</div>
-				<div class="commercial_date">
-					<span class="commercial_date_number">12</span>
-					<span class="commercial_date_string">часов</span>
-				</div>
-				<div class="commercial_date">
-					<span class="commercial_date_number">12</span>
-					<span class="commercial_date_string">минут</span>
-				</div>
-			</div>	
-		 </div>
-     <div class="commercial_wigets">
-			<div class="commercial_wigets_item">
-				<img src="images/24.png" alt="" class="commercial_wigets_item_img" />
-				<span class="commercial_wigets_item_span">Работаем круглосуточнно</span>
-			</div>
-			<div class="commercial_wigets_item">
-				<img src="images/2000.png" alt="" class="commercial_wigets_item_img" />
-				<span class="commercial_wigets_item_span">Довольных клиентов за 4+<br>года работы</span>
-			</div>
-			<div class="commercial_wigets_item">
-				<img src="images/certificate.png" alt="" class="commercial_wigets_item_img" />
-				<span class="commercial_wigets_item_span">Все сумки изготовленны из<br>натуральной итальянской кожи</span>
-			</div>
-			<div class="commercial_wigets_item">
-				<img src="images/present.png" alt="" class="commercial_wigets_item_img" />
-				<span class="commercial_wigets_item_span">Кошелек из натуральной<br>кожи в подарок</span>
-			</div>
-     </div>
-   </div>
-	</div>
+		  <ul class="top-nav">
+			<li class="top-nav-item-logo"><a href="#" class="main-logo"><span>Fashion</span></a></li>
+			<li class="top-nav-item"><a href="#" class="top-nav-item-a"><span class="top-nav-span">Каталог</span></a></li>
+			<li class="top-nav-item"><a href="#" class="top-nav-item-a"><span class="top-nav-span">Акции</span></a></li>
+			<li class="top-nav-item"><a href="#" class="top-nav-item-a"><span class="top-nav-span">Доставка и Оплата</span></a></li>
+			<li class="top-nav-item"><a href="#" class="top-nav-item-a"><span class="top-nav-span">Контакты</span></a></li>
+      <li class="top-nav-item"><a href="#" class="top-nav-item-a"><span class="top-nav-span">Блог</span></a></li>
+			<li class="top-nav-item top-nav-item-cart"><a href="#" class="cart-a"><span class="top-nav-span">
+      <svg id="cart" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.35 185.18">
+      <title>cart-svg</title><path class="toggle-cart cart" d="M91.11,89c6.78,33.45,23.64,85,23,107.37-.15,5.06-10.08,14-8.46,18.45.6,1.65.72,5.83,2,7,.63.6,4.76,1.16,5.63,1.17,34.92.13,107.08.33,141.75,0,1.35,0,3.52-1.76,4.67-3.79a11,11,0,0,0,1.17-5.37,8.1,8.1,0,0,0-2.51-5.58,10.28,10.28,0,0,0-3.74-2.12c-31.75-.25-95.58-.12-126.75-.12-2.5,0,0-6.06.17-8.37s-.81-9.72,1.5-9.79c40.75-1.33,104.67-13,143.17-16.67,1-.09,4.82-5,4.83-6,.33-20.33.76-47,.67-72.33a8.22,8.22,0,0,0-2.23-4.71A8.92,8.92,0,0,0,271.5,86c-38.33-.67-124.92-.23-162.17-.57-2.15,0-2.48-3.94-3.33-7.68A20.14,20.14,0,0,0,103.17,71c-.76-1-2.88-3-4.17-3-9.08-.17-30.17-.17-38,0-1.57,0-4.45,1.94-5.85,4.13a10.09,10.09,0,0,0-1.32,5.12,11.26,11.26,0,0,0,1.92,5.58A7.43,7.43,0,0,0,60,85.5c.26,0,7.79.2,15.75.25C82.83,85.8,90.4,85.46,91.11,89Z" transform="translate(-53.83 -67.88)"/><circle class="toggle-cart cart" cx="75.72" cy="170.84" r="14.33"/><circle class="toggle-cart cart" cx="180.99" cy="170.84" r="14.33"/>
+      </svg></span></a>
+      </li>
+      <li class="top-nav-item">
+      <a href="#" class="login-link"><span class="login-text">вход</span></a>
+      <a href="#" class="login-link registration-link"><span class="login-text">регистрация</span></a>
+      </li>
+		  </ul>
+
+      <div class="wooman-or-man">
+        <div class="wooman-or-man__buttons-wrap clearfix">
+          <div class="wooman-button">
+            <div class="button__inside-field">
+              <span class="inside-field__text">Для Женьщин</span>
+            </div>
+          </div>
+          <div class="man-button">
+              <div class="button__inside-field button__inside-field_man"><span class="inside-field__text">Для Мужчин</span></div>
+          </div>
+        </div>  
+      </div>
+
+	  </header>
+    
+	  <div class="commercial-wrapper">
+      <div class="slider">
+			      <ul class="bxslider">
+	  	  	    <li class="bxslider-item-1">
+              <img src="images/slide1-500.jpg" alt="Сумка 1" /></li>
+	  	  	    <li class="bxslider-item-2"><img src="images/slide2-500.jpg" alt="Клатч 1" /></li>
+			      </ul>
+		        <!-- <div id="slider_pages_wrap">
+			        <a data-slide-index="0" href="" class="slider_page"></a>
+			        <a data-slide-index="1" href="" class="slider_page"></a>
+			        <a data-slide-index="2" href="" class="slider_page"></a>
+			        <a data-slide-index="3" href="" class="slider_page"></a>
+		        </div> -->
+  	  </div>
+      
+        <!-- <div class="top-commercial__right">
+  	      <div class="commercial-content">
+  		      <h1 class="commercial-content__h1">новогодняя<br>распродажа</h1>
+			      <div class="commercial_content_banner">
+				      <span class="sale_banner_span">скидки до -87%</span>
+			      </div>
+			      <div class="commercial_exist_span">
+			        <span>Предложение действует:</span>	
+			      </div>
+			      <div class="commercial_date_wrap">
+				    <div class="commercial_date">
+					    <span class="commercial_date_number">12</span>
+					    <span class="commercial_date_string">дня</span>
+				    </div>
+				    <div class="commercial_date">
+				    	<span class="commercial_date_number">12</span>
+				    	<span class="commercial_date_string">часов</span>
+				    </div>
+				    <div class="commercial_date">
+				    	<span class="commercial_date_number">12</span>
+				    	<span class="commercial_date_string">минут</span>
+			    	</div>
+			      </div>	
+		      </div>
+        </div> -->
+    </div>
 	
-	<main class="main_content">
-	
-	<aside class="menu_wrap">
+	  <main class="main-content">
+	    <div class="breadcrumb-wrap">
+        <div class="breadcrumb-back-wrap">
+          <a href="" class="breadcrumb-back">Назад</a>
+        </div>
+        <ul class="breadcrumb-nav">
+           <li class="breadcrumb-nav-item"><a href="" class="breadcrumb-home">Домой</a></li>
+           <li class="breadcrumb-nav-item"><a href="">Женское</a></li>
+           <li class="breadcrumb-nav-item"><a href="">Сумки</a></li>
+        </ul> 
+      </div>
+	    <div class="menu_wrap">
 
-		<form action="post">
-    	<input type="text" id="search" class="search" name="search">
-		</form>
-		<h2 class="header_brand">бренд</h2>
-		<form action="post" class="select_wrap">
-			<select name="brand" id="brand" class="brand">
-				<option value="">Prada</option>
-				<option value="">Gucci</option>
-				<option value="">Armani</option>
-			</select>
-			<label for="brand" class="label_brand"></label>
-		</form >
-    <h2 class="header_wooman">женское</h2>
-  	<ul class="menu">
-  		<li class="menu_item"><a href="#" class="menu_link">Cумки</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Кошельки</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Клатчи</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Косметички</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Палантины</a></li>
-  	</ul>
+		    <div class="select-wrap">
+      
+          <h2 class="select-header">бренд<span class="select"></span></h2>
 
-    <h2 class="header_man">мужское</h2>
-  	<ul class="menu">
-  		<li class="menu_item"><a href="#" class="menu_link">Дипломаты</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Портфели</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Кошельки</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Портфели</a></li>
-  		<li class="menu_item"><a href="#" class="menu_link">Барсетки</a></li>
-  	</ul>
-	</aside>
+			    <ul class="menu brand-select-ul ">
+			    	<li class="select-item">
+              <div class="select-text-wrap">
+                <label  class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Prada</span><span class="label-count">(777)</span>
+                </label>
+              </div>         
+            </li>
+			    	<li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Gucci</span><span class="label-count">(456)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Armani</span><span class="label-count">(576)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>            
+                  <span class="label-check">
+                  </span><span class="label-text">DG</span><span class="label-count">(621)</span>
+                </label>
+              </div>         
+            </li>
+			    </ul>
+		    </div >
 
-	<div class="figure_wrap">
+        <div class="select-wrap">
+          <h2 class="select-header">женское<span class="select"></span></h2>
+      
+  	      <ul class="menu wooman-select-ul ">
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Сумки</span><span class="label-count">(35)</span>
+                </label>
+              </div>         
+            </li>
+  		      <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>           
+                  <span class="label-check">
+                  </span><span class="label-text">Кошельки</span><span class="label-count">(79)</span>
+                </label>
+              </div>         
+            </li>
+  		      <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Клатчи</span><span class="label-count">(58)</span>
+                </label>
+              </div>         
+            </li>
+  		      <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Косметички</span><span class="label-count">(47)</span>
+                </label>
+              </div>         
+            </li>
+  		      <li class="select-item">
+            <div class="select-text-wrap">
+              <label class="select-label">
+                <input type="checkbox" name="select-item" class="select-input"/>
+                <span class="label-check">
+                </span><span class="label-text">Палантины</span><span class="label-count">(24)</span>
+              </label>
+            </div>         
+            </li>
+  	      </ul>
+        </div>
 
-  	<figure class="figure"><img src="images/1.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/2.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/3.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/4.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/5.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/6.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/7.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/8.png" class="figure_img" alt=""></figure>
-  	<figure class="figure"><img src="images/9.png" class="figure_img" alt=""></figure>
-	</div>
-	
-	</main>
-	<footer></footer>
-<script src="jquery-2.2.1.js"></script>
-<script src="bxSlider/jquery.bxslider.js"></script>
-<script src="scrollreveal.js"></script>
-<script src="main.js"></script>
+        <div class="select-wrap">
+          <h2 class="select-header">мужское<span class="select"></span></h2>
+  	      <ul class="menu man-select-ul">
+  		      <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Дипломаты</span><span class="label-count">(43)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Портфели</span><span class="label-count">(73)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Барсетки</span><span class="label-count">(29)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Кошельки</span><span class="label-count">(46)</span>
+                </label>
+              </div>         
+            </li>
+  	      </ul>
+        </div>
+
+        <div class="select-wrap">
+          <h2 class="select-header">мужское<span class="select"></span></h2>
+          <ul class="menu man-select-ul">
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Дипломаты</span><span class="label-count">(43)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Портфели</span><span class="label-count">(73)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Барсетки</span><span class="label-count">(29)</span>
+                </label>
+              </div>         
+            </li>
+            <li class="select-item">
+              <div class="select-text-wrap">
+                <label class="select-label">
+                  <input type="checkbox" name="select-item" class="select-input"/>
+                  <span class="label-check">
+                  </span><span class="label-text">Кошельки</span><span class="label-count">(46)</span>
+                </label>
+              </div>         
+            </li>
+          </ul>
+        </div>
+
+	    </div>
+
+      <div class="index-figure-wrap">
+
+	      <div class="figure-content-wrap">
+
+  	      <figure class="index-figure">
+            <span class="bantik-sale"></span>
+            <a href="" class="index-figure-image">
+  	          <img src="images/1.png" class="index-figure-img" alt="">
+  	        </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+  	      </figure>
+      
+          <figure class="index-figure">
+            <a href="" class="index-figure-image">
+              <img src="images/2.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>     
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="index-figure">
+            <span class="bantik-new"></span>
+            <a href="" class="index-figure-image">
+              <img src="images/1.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="index-figure">
+            <span class="bantik-30"></span>
+            <a href="" class="index-figure-image">
+              <img src="images/1.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="index-figure">
+            <a href="" class="index-figure-image">
+              <img src="images/1.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="index-figure">
+            <a href="" class="index-figure-image">
+              <img src="images/1.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="index-figure">
+            <a href="" class="index-figure-image">
+              <img src="images/1.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="index-figure">
+            <a href="" class="index-figure-image">
+              <img src="images/1.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>
+
+          <figure class="index-figure">
+            <a href="" class="index-figure-image">
+              <img src="images/1.png" class="index-figure-img" alt="">
+            </a>
+            <div class="index-figure-text-wrap">
+              <a href="" class="index-figure-brand"><span>Gucci</span></a>     
+              <a href="" class="index-figure-name"><span>Клатч</span></a>      
+              <div class="index-figure-price">
+                <span class="index-figure-price-value">15000</span>
+                <span class="index-figure-price-currency">руб.</span>
+              </div>
+            </div>
+
+            <div class="index-figure-colors-wrap">
+              <ul class="index-figure-colors">
+                <li class="index-figure-colors-item"><a href="#"><img src="images/red.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/blue.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/grey.jpg" alt=""></a></li>
+                <li class="index-figure-colors-item"><a href="#"><img src="images/yellow.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </figure>  
+	      </div>
+
+        <div class="pagination-wrap">
+          <ul class="pagination">
+            <li class="pagination-item"><a href="#"><span>1</span></a></li>
+            <li class="pagination-item"><a href="#"><span>2</span></a></li>
+            <li class="pagination-item"><a href="#"><span>3</span></a></li>
+            <li class="pagination-item"><a href="#"><span>4</span></a></li>
+            <li class="pagination-item"><a href="#"><span>5</span></a></li>
+          </ul>
+        </div>
+      </div>
+    
+	  </main>
+
+  </div>
+  <div class="owl-wrap">
+    <div class="owl-carousel brand-owl">
+      <div class="brand-owl-item"><a href="#"><img src="images/brand/brand1-150.jpg" alt=""></a></div>
+      <div class="brand-owl-item"><a href="#"><img src="images/brand/brand2-150.png" alt=""></a></div>
+      <div class="brand-owl-item"><a href="#"><img src="images/brand/brand3-150.jpg" alt=""></a></div>
+      <div class="brand-owl-item"><a href="#"><img src="images/brand/brand4-150.png" alt=""></a></div>
+      <div class="brand-owl-item"><a href="#"><img src="images/brand/brand5-150.jpg" alt=""></a></div>
+      <div class="brand-owl-item"><a href="#"><img src="images/brand/brand6-150.jpg" alt=""></a></div>
+    </div>
+  </div>
+
+	<footer>
+   
+    <div class="footer-top-wrap clearfix">
+      <div class="footer-top-item">
+        <div class="footer-logo">
+          <a href="#">Fashion</a>
+        </div>
+        <div class="footer-number">
+          <span>8 (345) 456-23-26</span>
+          <span>8 (345) 406-16-26</span>
+        </div>
+        <div class="footer-shares">
+          <a href="#" class="vk"></a>
+          <a href="#" class="instagram"></a>
+          <a href="#" class="facebook"></a>
+        </div>
+      </div>
+      <div class="footer-top-item">
+        <h2>Информация</h2>
+        <ul>
+          <li><a href="#"><span>Акции</span></a></li>
+          <li><a href="#"><span>Наши магазины</span></a></li>
+          <li><a href="#"><span>Контакты</span></a></li>
+          <li><a href="#"><span>О нас</span></a></li>
+          <li><a href="#"><span>Карта сайта</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-top-item">
+        <h2>Клиентам</h2>
+        <ul>
+          <li><a href="#"><span>Условия доставки</span></a></li>
+          <li><a href="#"><span>Условия покупки</span></a></li>
+          <li><a href="#"><span>Возврат товара</span></a></li>
+          <li><a href="#"><span>Способы оплаты</span></a></li>
+          <li><a href="#"><span>Как пользоваться корзиной</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-top-item"></div>
+      <div class="footer-top-item"></div>
+    </div>
+
+  </footer>
+<script src="js/jquery-2.2.1.js"></script>
+<script src="js/bxSlider/jquery.bxslider.js"></script>
+<script src="js/scrollreveal.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
