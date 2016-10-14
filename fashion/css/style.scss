@@ -754,18 +754,18 @@ footer{
       font-weight: 600;
 	  	color: #000;
 	  }
-	  p{
-	  	margin-top: 25px;
-	  	font-family: 'Playfair Display SC', serif;
-	  	font-size: 30px;
-
-	  }
 }
 
 
 .footer-logo-item{
 	width: 20%;
 	margin-right: 7%;
+}
+
+.footer-header{
+	margin-top: 25px;
+	font-family: 'Playfair Display SC', serif;
+	font-size: 30px;
 }
 
 .footer-logo{
@@ -790,6 +790,42 @@ footer{
     }
 }
 
+.footer-mail-img{
+	width: 78%;
+	height: 20px;
+	margin-top: 15px; 
+}
+
+.footer-subscribe-text{
+	margin-top: 15px;
+	font-size: 18px;
+	font-family: 'Cormorant', serif;
+  font-weight: 600;
+}
+
+.subscribe-input{
+	position: relative;
+	margin-top: 15px;
+  input{
+  	width: 65%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+  }
+}
+
+.subscribe-submit{
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url(../images/subscribe-svg.svg);
+  }
+
+#subscribe-submit{
+  opacity: 0;
+}
 /////////////// Media for large screens START////////////////
 @media (min-width: 1400px){
 	.top-nav-item:nth-child(2) {
