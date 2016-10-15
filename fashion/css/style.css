@@ -633,6 +633,12 @@ footer {
 #subscribe-submit {
   opacity: 0; }
 
+.footer-line {
+  width: 90%;
+  height: 1px;
+  margin: 0 auto;
+  border-top: 1px dotted #000; }
+
 @media (min-width: 1400px) {
   .top-nav-item:nth-child(2) {
     margin-left: 9%; } }
