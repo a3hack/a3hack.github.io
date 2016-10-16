@@ -666,6 +666,32 @@ footer {
   margin: 0 auto;
   border-top: 1px dotted #000; }
 
+.copyright {
+  display: inline-block;
+  width: 20%;
+  margin-left: 3%;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden; }
+  .copyright p {
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 20px;
+    font-family: 'Cormorant', serif;
+    font-weight: 600; }
+
+.tom-alex {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 20%; }
+  .tom-alex p {
+    font-size: 20px;
+    font-family: 'Cormorant', serif;
+    font-weight: 600; }
+  .tom-alex img {
+    width: 223px;
+    height: 64px; }
+
 @media (min-width: 1400px) {
   .top-nav-item:nth-child(2) {
     margin-left: 9%; } }
