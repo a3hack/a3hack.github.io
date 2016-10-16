@@ -7,4 +7,4 @@
 ## Верстка  
 
 ###[Fashion - интернет-магазин](https://a3hack.github.io/fashion)
-###[Michello - интернет-магазин](https://a3hack.github.io/Alessandro)
+###[Michello - ресторан](https://a3hack.github.io/Alessandro)
