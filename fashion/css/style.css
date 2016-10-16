@@ -683,13 +683,14 @@ footer {
 .tom-alex {
   display: inline-block;
   margin-top: 60px;
-  margin-left: 20%; }
+  margin-left: 20%;
+  text-align: center; }
   .tom-alex p {
     font-size: 20px;
     font-family: 'Cormorant', serif;
     font-weight: 600; }
   .tom-alex img {
-    width: 223px;
+    width: 200px;
     height: 64px; }
 
 @media (min-width: 1400px) {
