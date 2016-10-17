@@ -1,0 +1,10 @@
+@mixin space_between($amount, $wrap_width, $elem_width, $demension){
+	display: inline-block;
+	vertical-align: middle;
+	// width: $elem_width+$demension;
+	// height: $elem_height+$demension;
+	margin-right: (($wrap_width - ($amount * $elem_width)) / ($amount - 1)) / $wrap_width * 100%;
+		&:nth-child(4){
+			margin-right: 0px;
+		}
+}
